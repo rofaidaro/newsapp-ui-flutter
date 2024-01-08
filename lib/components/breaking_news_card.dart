@@ -32,7 +32,7 @@ class _BreakingNewsCardState extends State<BreakingNewsCard> {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30.0),
             gradient: LinearGradient(
-              colors: [Colors.transparent, Colors.black],
+              colors: [Colors.transparent, Color.fromARGB(255, 124, 154, 171)],
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
             ),

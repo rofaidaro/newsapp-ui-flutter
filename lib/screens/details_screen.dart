@@ -1,4 +1,3 @@
-//now let's for the details screen
 
 import 'package:flutter/material.dart';
 import 'package:news_app_tut/models/news_model.dart';
@@ -15,10 +14,11 @@ class _DetailsScreenState extends State<DetailsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Color.fromARGB(255, 14, 3, 40),
         elevation: 0.0,
-        iconTheme: IconThemeData(color: Colors.orange.shade900),
+        iconTheme: IconThemeData(color: Colors.white),
       ),
+        backgroundColor: Color.fromARGB(255, 188, 226, 246),
       body: Padding(
         padding: const EdgeInsets.all(18.0),
         child: Column(
@@ -38,7 +38,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
             Text(
               widget.data.author!,
               style: TextStyle(
-                color: Colors.black54,
+                color: Color.fromARGB(255, 14, 3, 40),
               ),
             ),
             SizedBox(

@@ -17,7 +17,3 @@ class MyApp extends StatelessWidget {
   }
 }
 
-//let's start by setting up our project structure
-// first let's add a dependecy
-//now let's add the folder and the files that we will need
-//let's run our app

@@ -1,4 +1,3 @@
-//let's start by our home screen
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:news_app_tut/components/breaking_news_card.dart';
@@ -21,8 +20,8 @@ class _HomeScreenState extends State<HomeScreen> {
         elevation: 0.0,
         backgroundColor: Colors.transparent,
         title: Text(
-          "NewsApp",
-          style: TextStyle(color: Colors.black),
+          "DTU News",
+          style: TextStyle(color: Color.fromARGB(255, 14, 3, 40)),
         ),
         actions: [
           IconButton(
@@ -33,8 +32,9 @@ class _HomeScreenState extends State<HomeScreen> {
               ))
         ],
       ),
+      backgroundColor: Color.fromARGB(255, 124, 154, 171),
 
-      //Let's now work on the body
+
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(16),
@@ -47,6 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 style: TextStyle(
                   fontSize: 26.0,
                   fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(255, 14, 3, 40)
                 ),
               ),
               SizedBox(
@@ -66,10 +67,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 height: 40.0,
               ),
               Text(
-                "Recent News",
+                "Recent",
                 style: TextStyle(
                   fontSize: 26,
                   fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(255, 14, 3, 40),
                 ),
               ),
               SizedBox(
@@ -86,17 +88,16 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
 
-      //Now let's create the button navigation bar
+
       bottomNavigationBar: Container(
-        // let's make our button nav bar float
-        margin: EdgeInsets.all(12),
+        margin: EdgeInsets.only(left: 12,right: 12,bottom: 12),
         decoration: BoxDecoration(
-          color: Colors.black,
+          color: Color.fromARGB(255, 14, 3, 40),
           borderRadius: BorderRadius.circular(16),
         ),
         child: BottomNavigationBar(
           elevation: 0.0,
-          selectedItemColor: Colors.orange.shade900,
+          selectedItemColor: Colors.blueAccent,
           items: [
             BottomNavigationBarItem(
               backgroundColor: Colors.transparent,
